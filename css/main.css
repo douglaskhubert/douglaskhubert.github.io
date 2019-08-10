@@ -215,3 +215,9 @@ img[src*='#center'] {
     display: block;
     margin: auto;
 }
+
+@media (max-width: 480px) {
+  .img-comment {
+    width: 40%;
+  }
+}

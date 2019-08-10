@@ -423,7 +423,7 @@ $(document).ready(function () {
                     editionDate = new Date(comment.updated_at).toLocaleString("pt-BR", {timeZone: 'America/Sao_Paulo'})
                 }
 
-                    var t = "<div class='container'>"
+                var t = "<div class='container'>"
                     t += "<div class='row'>"
                     t += "<div class='col-sm-12'>"
                     t += "<hr>"
@@ -431,8 +431,8 @@ $(document).ready(function () {
                     t += "</div><!-- /row -->"
                     t += "<div class='row'>"
                     t += "<div class='col-sm-2'>"
-                    t += "<div class='thumbnail'>"
-                    t += "<img class='img-responsive user-photo' src='" + comment.user.avatar_url + "'>"
+                    t += "<div class=''>"
+                    t += "<img class='img-responsive img-circle img-comment user-photo' src='" + comment.user.avatar_url + "'>"
                     t += "</div><!-- /thumbnail -->"
                     t += "</div><!-- /col-sm-1 -->"
                     t += "<div class='col-sm-10'>"
