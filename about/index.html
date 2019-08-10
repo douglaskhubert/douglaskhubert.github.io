@@ -69,9 +69,9 @@
 
 <p>Meu nome é Douglas, sou programador e viciado em aprender. Eterno <strong><em>padawan</em></strong></p>
 
-<p>Quando digo viciado estou falando sério, consumo todo conteúdo que vejo relacionado à desenvolvimento pessoal e técnicas de aprendizagem e sempre tento colocar em prática o que acho interessante.</p>
+<p>Quando digo viciado estou falando sério, consumo todo conteúdo que vejo relacionado a desenvolvimento pessoal e técnicas de aprendizagem e sempre tento colocar em prática o que acho interessante.</p>
 
-<p>Neste blog, vou tentar passar um pouco das coisas que eu leio/aprendo por ai sobre <strong><em>dev/programming</em></strong>, <strong><em>personal growth</em></strong> e alguma experiência de vida sobre <strong>aprendizado de idiomas</strong>. Se estes assuntos te interessam, espero que você goste do meu conteúdo e faça um ótimo aproveito.</p>
+<p>Neste blog, vou tentar passar um pouco das coisas que eu leio/aprendo por aí sobre <strong><em>dev/programming</em></strong>, <strong><em>personal growth</em></strong> e alguma experiência de vida sobre <strong>aprendizado de idiomas</strong>. Se estes assuntos te interessam, espero que você goste do meu conteúdo e faça um ótimo aproveito.</p>
 
 <h2 id="technical-skills">Technical Skills:</h2>
 
@@ -99,25 +99,67 @@
             </div>
           </div>
           <hr>
-        <div class="disqus">
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
+          
+            <div id="gh-comments-list">
+</div> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var url = "https://github.com/douglaskhubert/douglaskhubert.github.io/issues/" +  null 
+var api_url = "https://api.github.com/repos/douglaskhubert/douglaskhubert.github.io/issues/" +  null  + "/comments"
 
-    (function() {
-      
-      
-      if (window.location.hostname == "localhost")
-        return;
+$(document).ready(function () {
 
-      var disqus_shortname = '';
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
+    $.ajax(api_url, {
+        headers: {Accept: "application/vnd.github.v3.html+json"},
+        dataType: "json",
+        success: function(comments) {
+            $("#gh-comments-list").append(
+                    "<i>Comente através do <b><a href='" + url + "'>GitHub Issue</a></b> do post.</i>"
+                    );
+            $.each(comments, function(i, comment) {
+
+                var editionDate = ''
+
+                var date = new Date(comment.created_at).toLocaleString("pt-BR", {timeZone: 'America/Sao_Paulo'})
+                if (comment.created_at !== comment.updated_at) {
+                    editionDate = new Date(comment.updated_at).toLocaleString("pt-BR", {timeZone: 'America/Sao_Paulo'})
+                }
+
+                    var t = "<div class='container'>"
+                    t += "<div class='row'>"
+                    t += "<div class='col-sm-12'>"
+                    t += "<hr>"
+                    t += "</div><!-- /col-sm-12 -->"
+                    t += "</div><!-- /row -->"
+                    t += "<div class='row'>"
+                    t += "<div class='col-sm-2'>"
+                    t += "<div class='thumbnail'>"
+                    t += "<img class='img-responsive user-photo' src='" + comment.user.avatar_url + "'>"
+                    t += "</div><!-- /thumbnail -->"
+                    t += "</div><!-- /col-sm-1 -->"
+                    t += "<div class='col-sm-10'>"
+                    t += "<div class='panel panel-default '>"
+                    t += "<div class='panel-heading'>"
+                    t += "<strong><a href='" + comment.user.html_url  + "'>" + comment.user.login + "</a></strong>"
+                    t += "<span class='text-muted'> comentou em <strong>" + date + "</strong>.</span>"
+                    t += editionDate && ( "<br><i><span class='text-muted'> Este comentário foi <a data-toggle='tooltip' title='Data da edição: " + editionDate + "'>editado</a></i>" )
+                    t += "</div>"
+                    t += "<div id='gh-comment-hr' class='panel-body'>"
+                    t += comment.body_html
+                    t += "</div><!-- /panel-body -->"
+                    t += "</div><!-- /panel panel-default -->"
+                    t += "</div><!-- /col-sm-5 -->"
+                    t += "</div><!-- /row -->"
+                    t += "</div><!-- /container -->"
+                $("#gh-comments-list").append(t);
+            });
+        },
+        error: function() {
+        }
+    });
+});
+</script>
+
         </div>
       </div>
       

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>multidisciplinar on Douglas K. Hubert</title>
+    <link>https://douglaskhubert.github.io/tags/multidisciplinar/</link>
+    <description>Recent content in multidisciplinar on Douglas K. Hubert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 03 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://douglaskhubert.github.io/tags/multidisciplinar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CRUD simples com Symfony &#43; MySQL</title>
+      <link>https://douglaskhubert.github.io/posts/crud-symfony/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://douglaskhubert.github.io/posts/crud-symfony/</guid>
+      <description>Introdução Fala ai seres codantes, hoje vamos fazer um projetinho multidisciplinar aqui no blog. Meu objetivo é que, no final desse post (ou dessa série de posts), você tenha alguma noção de usabilidade básica em:
+ Docker, Dockerfile, Docker-Compose Framework Symfony 4, PHP e Doctrine Testes automatizados com PHPUnit Frontend Basicão com Twig e BootStrap  Nosso projetinho será dividido em:
+ Requisitos Configurando o ambiente Primeiros testes unitários antes do código, famoso TDD Criação das entidades com Doctrine Templates simples com Twig + Bootstrap Dando um tapa  Requisitos Vamos nos manter ao essencial, docker e docker-compose.</description>
+    </item>
+    
+  </channel>
+</rss>
