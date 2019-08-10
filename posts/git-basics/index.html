@@ -77,17 +77,17 @@
 
 <p><img src="/img/posts/git-basics/git-header.png"></p>
 
-<p>Este post é um <em>overview</em> do primeiro capítulo da documentação do Git.</p>
+<p><span>Este post é um <em>overview</em> do primeiro capítulo da documentação do Git.</span></p>
 
-<h2 id="introdução"><strong>Introdução</strong></h2>
+<h1 id="introdução"><strong>Introdução</strong></h1>
 
-<h3 id="o-que-é-git-controle-de-versão-hã"><strong>O que é Git? Controle de versão? Hã?</strong></h3>
+<h2 id="o-que-é-git-controle-de-versão-hã"><strong>O que é Git? Controle de versão? Hã?</strong></h2>
 
 <p>Um controle de versões pode ser feito de diversas formas.</p>
 
-<p>O simples fato de organizar pastas de backup por data, ex: 2018-02-22-Backup, e
-em outro dia criar outra pasta com o nome 2018-03-22-Backup, já faz com que
-tenhamos um controle de versão.  O problema é que dessa forma se torna um
+<p>O simples fato de organizar pastas de backup por data, ex: <em>2018-02-22-Backup</em>, e
+em outro dia criar outra pasta com o nome <em>2018-03-22-Backup</em>, já faz com que
+tenhamos um <strong>controle de versão</strong>.  O problema é que, dessa forma, se torna um
 controle de versão pouco vantajoso, pois precisamos verificar os arquivos um a
 um em busca de alterações e também incluir novos arquivos.</p>
 
@@ -102,7 +102,7 @@ arquivos sob controle de revisão.</p>
 <p><img 
     src="/img/posts/git-basics/sistemas-locais-de-cv.png" 
     width="500" height="500" alt="Sistemas Locais de Controle de Versão">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</a></em>
 </p></p>
 
@@ -114,7 +114,7 @@ número de clientes que usam arquivos a partir desse lugar central</p>
 <p><img 
     src="/img/posts/git-basics/sistemas-centralizados-de-cv.png" 
     width="500" height="500" alt="Sistemas Centralizados de Controle de Versão">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</a></em>
 </p></p>
 
@@ -131,11 +131,11 @@ colaboradores do projeto.</p>
 <p><img 
     src="/img/posts/git-basics/sistemas-distribuidos-de-cv.png" 
     width="500" height="500" alt="Sistemas Distribuidos de Controle de Versão">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</a></em>
 </p></p>
 
-<h3 id="um-pouquinho-de-história"><strong>Um pouquinho de história</strong></h3>
+<h2 id="um-pouquinho-de-história"><strong>Um pouquinho de história</strong></h2>
 
 <p>A origem do <strong>Git</strong> surge em 2005 a partir de um desentendimento entre os
 desenvolvedores que colaboravam com o projeto do Kernel do <strong>Linux</strong> e a empresa
@@ -156,9 +156,11 @@ aos seguintes princípios:</p>
 <li>Capacidade de trabalhar com projetos grandes (velocidade e tamanho dos dados)</li>
 </ul>
 
-<h2 id="git-basics"><strong>Git Basics</strong></h2>
+<hr />
 
-<h4 id="snapshots-not-differences">Snapshots, not differences.</h4>
+<h1 id="git-basics"><strong>Git Basics</strong></h1>
+
+<h3 id="snapshots-not-differences"><strong>Snapshots, not differences.</strong></h3>
 
 <p>O Git não trabalha armazenando a diferença dos arquivos e sim as diferenças
 do sistema de arquivos <strong>como um todo</strong>.</p>
@@ -168,7 +170,7 @@ do sistema de arquivos <strong>como um todo</strong>.</p>
 <img 
 src="/img/posts/git-basics/diff-between-files.png" 
 width="500" height="500" alt="Diferença entre Arquivos">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</a></em>
 </p></p></li>
 
@@ -176,7 +178,7 @@ width="500" height="500" alt="Diferença entre Arquivos">
 <img 
 src="/img/posts/git-basics/diff-filesystem.png" 
 width="500" height="500" alt="Diferença no Filesystem">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</a></em>
 </p></p></li>
 
@@ -198,12 +200,12 @@ Provê certa segurança, pois podemos fazer testes tranquilamente, sem medo de
 perder nada.</p></li>
 </ul>
 
-<h2 id="os-três-estados"><strong>Os Três Estados</strong></h2>
+<h3 id="os-três-estados"><strong>Os Três Estados</strong></h3>
 
 <p><img 
     src="/img/posts/git-basics/os-tres-estados.png" 
     width="500" height="500" alt="Os Três Estados">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</a></em>
 </p></p>
 
@@ -279,7 +281,7 @@ novo.”
 <p style="text-align: right;"><em>Docs, Git.</em></p></p>
 </blockquote>
 
-<p><code>Faça sempre commits incrementais e frequêntes</code></p>
+<p><code>Faça sempre commits incrementais e frequentes</code></p>
 
 <h3 id="criando-aliases-atalhos"><strong>Criando aliases (atalhos):</strong></h3>
 
@@ -320,7 +322,7 @@ do commit.</p>
 <p><img 
     src="/img/posts/git-basics/commit-and-tree.png" 
     width="500" height="500" alt="Commit and Tree">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</a></em>
 </p></p>
 
@@ -331,7 +333,7 @@ filho de quem, qual é a ordem dos commits.</p>
 <p><img 
     src="/img/posts/git-basics/commits-and-parents.png" 
     alt="Commit and Parent">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</a></em>
 </p></p>
 
@@ -342,7 +344,7 @@ abaixo exemplifica o conceito.</p>
 <p><img 
     src="/img/posts/git-basics/branch-testing.png" 
     width="500" height="500" alt="Exemplo de funcionamento de uma branch">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</a></em>
 </p></p>
 
@@ -360,12 +362,14 @@ demonstrado na imagem abaixo.</p>
 <p><img 
     src="/img/posts/git-basics/basic-merging-1.png" 
     width="500" height="500" alt="Exemplo de merge de branches">
-<p style="text-align: center;">
+<p class="img-source-link">
 <em>fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</a></em>
 </p></p>
 
 <p>É uma busca pelo <em>commit</em> em comum, o Git vai voltando até achar o <strong>“ancestral
 comum”</strong> e, a partir dele, ver o que mudou para poder fazer um <em>merge</em>.</p>
+
+<hr />
 
 <h1 id="por-enquanto-é-tudo"><strong>Por enquanto, é tudo&hellip;</strong></h1>
 

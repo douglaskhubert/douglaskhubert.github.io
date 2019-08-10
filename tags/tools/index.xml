@@ -19,7 +19,7 @@
       <guid>https://douglaskhubert.github.io/posts/git-basics/</guid>
       <description>Este post é um overview do primeiro capítulo da documentação do Git.
 Introdução O que é Git? Controle de versão? Hã? Um controle de versões pode ser feito de diversas formas.
-O simples fato de organizar pastas de backup por data, ex: 2018-02-22-Backup, e em outro dia criar outra pasta com o nome 2018-03-22-Backup, já faz com que tenhamos um controle de versão. O problema é que dessa forma se torna um controle de versão pouco vantajoso, pois precisamos verificar os arquivos um a um em busca de alterações e também incluir novos arquivos.</description>
+O simples fato de organizar pastas de backup por data, ex: 2018-02-22-Backup, e em outro dia criar outra pasta com o nome 2018-03-22-Backup, já faz com que tenhamos um controle de versão. O problema é que, dessa forma, se torna um controle de versão pouco vantajoso, pois precisamos verificar os arquivos um a um em busca de alterações e também incluir novos arquivos.</description>
     </item>
     
   </channel>

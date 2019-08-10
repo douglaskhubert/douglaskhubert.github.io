@@ -132,6 +132,7 @@ html, body {
   border-style: none;
 }
 .panel-body {
+  /*background-color: black; */
   padding-top: -10px;
   text-align: left;
 }
@@ -184,9 +185,46 @@ html, body {
 }
 .blogpost{
   text-align: left;
-  line-height: 30px;
+  line-height: 36px;
   font-size: 18px;
 }
+
+/* Custom blog post classes */
+
+.blogpost h1 {
+  text-align: center;
+  line-height: 36px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.blogpost h2 {
+  text-align: left;
+  line-height: 36px;
+  margin-top: 50px;
+}
+
+.blogpost h3 {
+  text-align: left;
+  line-height: 36px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.blogpost p {
+  text-align: left;
+  line-height: 36px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.blogpost .img-source-link {
+  text-align: center;
+  font-size: 14px;
+  margin-top: -3%;
+}
+
+/* --- Custom blog post classes */
 
 /* Footer  */
 .footer {
